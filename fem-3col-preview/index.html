@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    /* --------------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-size: 1rem;
+    }
+
+    .bg-primary { background: hsl(31, 77%, 52%); }
+    .bg-secondary { background: hsl(184, 100%, 22%); }
+    .bg-tertiary { background: hsl(179, 100%, 13%); }
+
+    .container {
+      display: block;
+      max-width: 1200px;
+      margin: 0px auto;
+      padding-top: 4rem;
+    }
+
+    .page-component.preview-cols-3 {
+      display: flex;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .preview-col {
+      font-family: 'Lexend Deca', sans-serif;
+      padding: 4%;
+    }
+    .preview-col p {
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    .preview-col h3 {
+      font-family: 'Big Shoulders Display', cursive;
+      font-weight: 700;
+      font-size: 3rem;
+      color: hsl(0, 0%, 95%);
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-component preview-cols-3">
+      <div class="preview-col bg-primary">
+        <img class="preview-col-logo" src="images/icon-sedans.svg" alt="Sedans icon">
+        <h3>Sedans</h3>
+        <p>
+          Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+          or on your next road trip.
+        </p>
+        <button class="btn btn-light">Learn More</button>
+      </div>
+
+      <div class="preview-col bg-secondary">
+        <img class="preview-col-logo" src="images/icon-suvs.svg" alt="SUV icon">
+        <h3>SUVs</h3>
+        <p>
+          Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+          and off-road adventures.
+        </p>
+        <button class="btn btn-light">Learn More</button>
+      </div>
+
+      <div class="preview-col bg-tertiary">
+        <img class="preview-col-logo" src="images/icon-luxury.svg" alt="Luxury car icon">
+        <h3>Luxury</h3>
+        <p>
+          Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+          rental and arrive in style.
+        </p>
+        <button class="btn btn-light">Learn More</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
+</body>
+
+</html>
